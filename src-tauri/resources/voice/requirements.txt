@@ -1,0 +1,7 @@
+# Voice engine packages (installed with uv into an app-private environment).
+# Versions were validated on Apple Silicon (MPS); constraints.txt pins the full tree.
+omnivoice==0.2.1
+demucs==4.1.0
+soundfile==0.14.0
+torch==2.14.1
+torchaudio==2.11.0

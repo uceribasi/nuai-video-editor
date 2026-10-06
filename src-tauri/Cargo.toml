@@ -1,0 +1,53 @@
+[package]
+name = "nuai"
+version = "0.1.0"
+description = "Open-source AI video editor: removes silences, retakes, filler words and dead footage"
+authors = ["nuai contributors"]
+license = "MIT"
+repository = "https://github.com/uceribasi/nuai-video-editor"
+homepage = "https://github.com/uceribasi/nuai-video-editor"
+edition = "2021"
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "nuai_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-opener = "2"
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["process", "io-util", "fs", "sync", "time", "macros", "rt-multi-thread"] }
+reqwest = { version = "0.13", default-features = false, features = ["json", "stream", "rustls"] }
+futures-util = "0.3"
+anyhow = "1"
+sha2 = "0.10"
+base64 = "0.22"
+hound = "3"
+keyring = "4"
+whisper-rs = "0.16"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+whisper-rs = { version = "0.16", features = ["metal"] }
+
+[dev-dependencies]
+tempfile = "3"
+
+# Read the optimization guideline for more details: https://tauri.app/concept/size/#cargo-configuration
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true
+
+# whisper.cpp is unusably slow without optimizations, even in dev builds.
+[profile.dev.package.whisper-rs-sys]
+opt-level = 3

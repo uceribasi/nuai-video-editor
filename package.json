@@ -1,0 +1,47 @@
+{
+  "name": "nuai",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Open-source AI video editor: removes silences, retakes, filler words and dead footage.",
+  "license": "MIT",
+  "homepage": "https://github.com/uceribasi/nuai-video-editor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uceribasi/nuai-video-editor.git"
+  },
+  "bugs": "https://github.com/uceribasi/nuai-video-editor/issues",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "typecheck": "tsc --noEmit",
+    "test": "cd src-tauri && cargo test"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "^2.8.1",
+    "@tauri-apps/plugin-opener": "^2",
+    "i18next": "^26.4.2",
+    "lucide-react": "^1.52.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^17.0.16",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tauri-apps/cli": "^2",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^6.0.2",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.16"
+  }
+}

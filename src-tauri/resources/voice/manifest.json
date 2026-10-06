@@ -1,0 +1,64 @@
+{
+ "repos": [
+  {
+   "repo": "k2-fsa/OmniVoice",
+   "revision": "c5fdb5ccb189668d56333f77ba2629f4cd7535f4",
+   "files": [
+    {
+     "path": "audio_tokenizer/config.json",
+     "size": 2531
+    },
+    {
+     "path": "audio_tokenizer/model.safetensors",
+     "size": 805665628,
+     "sha256": "fe7c5e8785e0a05833e1bfc3e002ec7f55af21e306b2e7154a448c1f54ccfb0d"
+    },
+    {
+     "path": "audio_tokenizer/preprocessor_config.json",
+     "size": 206
+    },
+    {
+     "path": "chat_template.jinja",
+     "size": 4168
+    },
+    {
+     "path": "config.json",
+     "size": 2238
+    },
+    {
+     "path": "model.safetensors",
+     "size": 2450344112,
+     "sha256": "730839316de585f4c8298ec0e1712efc10fb19c6fa4e36eb741cb8d51ebcf6aa"
+    },
+    {
+     "path": "tokenizer.json",
+     "size": 11423986,
+     "sha256": "408f669b7e2b045fdf54201d815bd364e6667dbd845115da81239c40bc6dcfd1"
+    },
+    {
+     "path": "tokenizer_config.json",
+     "size": 533
+    }
+   ]
+  },
+  {
+   "repo": "adefossez/HTDemucs",
+   "revision": "cbc8a9b1a87023b7fd74e7b3412e6321c0eab003",
+   "files": [
+    {
+     "path": "955717e8.json",
+     "size": 12087
+    },
+    {
+     "path": "955717e8.safetensors",
+     "size": 84025440,
+     "sha256": "d9fa14133cfcc034a6758923bb3a8ca9f8dfd0b582134643bbf83f72c17576dd"
+    },
+    {
+     "path": "htdemucs.yaml",
+     "size": 21
+    }
+   ]
+  }
+ ]
+}
