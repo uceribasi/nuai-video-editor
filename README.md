@@ -2,7 +2,7 @@
   <img src="assets/logo.svg" width="112" alt="nuai logo">
 </p>
 
-<h1 align="center">nuai</h1>
+<h1 align="center">NU AI</h1>
 
 <p align="center">
   <b>The open-source AI video editor that cleans up your recordings.</b><br>
