@@ -117,6 +117,8 @@ before it clones anything.
 
 ![Subtitles translated to English and dubbed in the speaker's voice](docs/screenshots/subtitles.png)
 
+![Exporting with the English dub as the soundtrack](docs/screenshots/export.png)
+
 Coming next: fixing words by editing the transcript, re-spoken in the same voice.
 
 ## AI providers
